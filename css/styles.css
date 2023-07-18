@@ -756,6 +756,9 @@ img {
   font-size: 12px;
   letter-spacing: 0.48px;
 }
+
+/**Checkbox*/
+
 .checkbox-container {
   margin-bottom: 24px;
 }
