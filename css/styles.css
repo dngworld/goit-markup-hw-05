@@ -745,7 +745,7 @@ img {
   line-height: 1.17;
   font-size: 12px;
   letter-spacing: 0.48px;
-  color: var(--icon-border-cl);
+  color: rgba(46, 47, 66, 0.4);
 
   outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -793,10 +793,10 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
+
   width: 16px;
   height: 16px;
-
+  fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
@@ -807,7 +807,7 @@ img {
 
 .modal-form-checkbox:checked
   + .modal-form-agreement
-  > .modal-form-custom-checkbox {
+  .modal-form-custom-checkbox {
   border: none;
   background-color: var(--btn-cl);
   fill: var(--white-bg-cl);
@@ -819,7 +819,7 @@ img {
 
 .modal-form-checkbox:checked
   + .modal-form-agreement
-  > .modal-form-custom-checkbox
+  .modal-form-custom-checkbox
   > .modal-form-checkbox-icon {
   opacity: 1;
 }
