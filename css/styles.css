@@ -629,7 +629,7 @@ img {
   padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+
   transform: translateX(-50%) translateY(-50%);
 
   border-radius: 4px;
@@ -680,7 +680,7 @@ img {
   width: 360px;
 
   margin-bottom: 16px;
-  padding-top: 72px;
+
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -689,9 +689,13 @@ img {
   letter-spacing: 0.32px;
 }
 .modal-form {
+  margin: 0 auto;
 }
 .modal-form-container {
   margin-bottom: 8px;
+}
+.textarea-container {
+  margin-bottom: 16px;
 }
 .modal-form-field {
   display: block;
@@ -739,6 +743,9 @@ img {
   height: 120px;
 
   line-height: 1.17;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  color: var(--icon-border-cl);
 
   outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -798,7 +805,9 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+.modal-form-checkbox:checked
+  + .modal-form-agreement
+  > .modal-form-custom-checkbox {
   border: none;
   background-color: var(--btn-cl);
   fill: var(--white-bg-cl);
@@ -809,7 +818,8 @@ img {
 }
 
 .modal-form-checkbox:checked
-  + .modal-form-custom-checkbox
+  + .modal-form-agreement
+  > .modal-form-custom-checkbox
   > .modal-form-checkbox-icon {
   opacity: 1;
 }
@@ -876,10 +886,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.48px;
   padding: 8px 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   border-radius: 4px;
   border: 1px solid var(--main-white-cl);
-  filter: drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-form-btn {
